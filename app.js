@@ -1,8 +1,9 @@
 const http = require('http') //aqui importo el module http
+const casual = require('casual')
 
 //create server method to create a server. Requires callback of two parameters
 const server = http.createServer((req, res) => {
-    res.end('your first simple web server');
+    res.end(casual.country);
 
 });
 
